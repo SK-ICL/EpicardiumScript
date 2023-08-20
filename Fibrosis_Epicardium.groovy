@@ -1,5 +1,5 @@
-setImageType('BRIGHTFIELD_H_E')
-setColorDeconvolutionStains('{"Name" : "H&E estimated", "Stain 1" : "Hematoxylin", "Values 1" : "0.5237 0.79993 0.29302", "Stain 2" : "Eosin", "Values 2" : "0.11171 0.94652 0.3027", "Background" : " 237 229 240"}')
+setImageType('BRIGHTFIELD_H_DAB');
+setColorDeconvolutionStains('{"Name" : "PSR", "Stain 1" : "Hematoxylin", "Values 1" : "0.21327 0.79026 0.57447", "Stain 2" : "DAB", "Values 2" : "0.22107 0.39824 0.89024", "Background" : " 235 233 236"}');
 createAnnotationsFromPixelClassifier("Tissue Detection", 1.0E7, 0.0, "SPLIT")
 selectAnnotations()
 createAnnotationsFromPixelClassifier("Fibrosis_Epicardium", 10E5, 0.0, "SPLIT", "INCLUDE_IGNORED")
